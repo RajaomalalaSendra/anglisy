@@ -2,17 +2,33 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 text-left">
-            <h1>Froala Design Blocks</h1>
-            <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            <h1>Litera tsy tononina amin'ny anglisy</h1>
+            <p>Ny ankamaroan'ny litera izay resahina dia ny "consonne" izay eo alohan'ny "consonne" iray.</p>
+            <h2>1. Miatomboka amin'ny "K"</h2>
+            <p>Ny fitsipika dia tsotra: <br/>
+            Tsy vakiana ny "k" rehefa eo alohan'ny "n".</p>
+            <p>Ireto avy izy ireo: </p>
+          </div>
+          <div class="col-md-8">
+            <table class="table table-striped">
+              <thead class="bg-dark">
+                <tr>
+                  <td>Anglisy</td>
+                  <td>Malagasy</td>
+                </tr>
+              </thead>
+              <tbody>
+                <%(@lessons_anglisy_k.length).times do |i|%>
+                <tr>
+                  <td><%=@lessons_anglisy_k[i]%></td>
+                  <td><%=@lessons_malagasy_k[i]%></td>
+                <%end%>
+                </tr>
+              </tbody>  
+            </table>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-12 text-left">
-            <video width="1000" height="500" controls>
-              <source src="../goodgrace.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
           <div class="col-12 col-sm-8 col-md-4 col-lg-3 m-sm-auto mr-md-auto ml-md-0">
             <p><a href="/lessons/2">Lesson 2 <i class="fas fa-angle-right"></i></a></p>
           </div> 
