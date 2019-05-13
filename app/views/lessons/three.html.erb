@@ -4,24 +4,76 @@
           <div class="col-12 text-left">
             <h1>Litera tsy tononina amin'ny anglisy</h1>
             <p>Ny ankamaroan'ny litera izay resahina dia ny "consonne" izay eo alohan'ny "consonne" iray.</p>
-            <h2>1. Miatomboka amin'ny "K"</h2>
+            <h2>1. Miantomboka amin'ny "K"</h2>
             <p>Ny fitsipika dia tsotra: <br/>
             Tsy vakiana ny "k" rehefa eo alohan'ny "n".</p>
             <p>Ireto avy izy ireo: </p>
           </div>
           <div class="col-md-8">
             <table class="table table-striped">
-              <thead class="bg-dark">
-                <tr>
-                  <td>Anglisy</td>
-                  <td>Malagasy</td>
-                </tr>
-              </thead>
+              <%= render 'thead'%>
               <tbody>
                 <%(@lessons_anglisy_k.length).times do |i|%>
                 <tr>
                   <td><%=@lessons_anglisy_k[i]%></td>
                   <td><%=@lessons_malagasy_k[i]%></td>
+                <%end%>
+                </tr>
+              </tbody>  
+            </table>
+          </div>
+          <div class="col-12 text-left">
+            <h2>2. Miantomboka amin'ny "P"</h2>
+            <p>Ny fitsipika dia tsotra: <br/>
+            Tsy vakiana ny "p" rehefa eo alohan'ny "s".</p>
+            <p>Ireto avy izy ireo: </p>
+          </div>
+          <div class="col-md-8">
+            <table class="table table-striped">
+              <%= render 'thead'%>
+              <tbody>
+                <%(@lessons_anglisy_p.length).times do |i|%>
+                <tr>
+                  <td><%=@lessons_anglisy_p[i]%></td>
+                  <td><%=@lessons_malagasy_p[i]%></td>
+                <%end%>
+                </tr>
+              </tbody>  
+            </table>
+          </div>
+          <div class="col-12 text-left">
+            <h2>3. Miafara amin'ny "B"</h2>
+            <p>Ny fitsipika dia tsotra: <br/>
+            Tsy vakiana ny "b" rehefa eo arinan'ny "m".</p>
+            <p>Ireto avy izy ireo: </p>
+          </div>
+          <div class="col-md-8">
+            <table class="table table-striped">
+              <%= render 'thead'%>
+              <tbody>
+                <%(@lessons_anglisy_b.length).times do |i|%>
+                <tr>
+                  <td><%=@lessons_anglisy_b[i]%></td>
+                  <td><%=@lessons_malagasy_b[i]%></td>
+                <%end%>
+                </tr>
+              </tbody>  
+            </table>
+          </div>
+          <div class="col-12 text-left">
+            <h2>4. Miafara amin'ny "N"</h2>
+            <p>Ny fitsipika dia tsotra: <br/>
+            Tsy vakiana ny "n" rehefa eo arinan'ny "m".</p>
+            <p>Ireto avy izy ireo: </p>
+          </div>
+          <div class="col-md-8">
+            <table class="table table-striped">
+              <%= render 'thead'%>
+              <tbody>
+                <%(@lessons_anglisy_n.length).times do |i|%>
+                <tr>
+                  <td><%=@lessons_anglisy_n[i]%></td>
+                  <td><%=@lessons_malagasy_n[i]%></td>
                 <%end%>
                 </tr>
               </tbody>  
