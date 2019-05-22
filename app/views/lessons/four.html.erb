@@ -1,0 +1,93 @@
+<section class="fdb-block">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-left">
+          <h1>Fehezanteny amin'ny anglisy</h1>
+          <p class="lead">Raha arakan'ny famaritana dia ny fehezantenty dia misy ny  ary ny fameno.</p>
+          <h2>Karazany:</h2>
+          <p>Raha tenenina tsotsotra dia misy karazany telo ny fehezanteny amin'ny anglisy:</p>
+<!--           <div class="row">
+            <div class="col-1"></div>
+            <div class="col-md-9 bg-dark rounded"><strong>Wh   +   "do/did"   +   Mpisolotena Tampisaka    +   Matoanteny + Fanampy?</strong></div>
+            <div class="col-1"></div>
+          </div>
+          <p>Misy ny matoanteny tsy manaraka io fitsipika io. Ao anatin'izany ny matoanteny "be".</p>
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-md-9 bg-dark rounded"><strong>Wh   +   "be"   +   Mpisolotena Tampisaka    +   Matoanteny + Fanampy?</strong></div>
+            <div class="col-1"></div>
+          </div> -->
+          <h2>1. Fehezanteny tsotra na ny simple sentence</h2>
+          <p>Ny fehezanteny tsotra dia ampiasaina matetika amin'ny teny anglisy. <br/>
+          Ohatran'izao ny firafiny. 
+          </p>
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-md-9 bg-dark rounded"><strong>S + V + C.</strong></div>
+            <div class="col-1"></div>
+          </div>
+          <% (@lessons_simple_sentence_english.length).times do |i|%>
+          <div class="row">
+            <div class="col"><p>Ohatra: <%= @lessons_simple_sentence_malagasy[i]%></p></div>
+            <div class="col"><p>Example: <%= @lessons_simple_sentence_english[i]%></p></div>
+          </div>
+          <% end %>
+          <h2>2. Compounded Sentence</h2>
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-md-9 bg-dark rounded"><strong>S + V + C + compound + S + V + C.</strong></div>
+            <div class="col-1"></div>
+          </div>
+          <p>Ireo coumpound amin'ny teny anglisy:</p>
+          <div class="row">
+            <div class="col"></div>
+            <div class="col">
+            <%@lists.each do |list|%>
+              <li class="list-group-item bg-dark">
+                <%= list %>
+              </li>
+            <%end%>
+            </div>
+            <div class="col"></div>
+          </div>
+
+          <% (@lessons_componded_sentence_english.length).times do |i|%>
+          <div class="row">
+            <div class="col"><p>Ohatra: <%= @lessons_componded_sentence_malagasy[i]%></p></div>
+            <div class="col"><p>Example: <%= @lessons_componded_sentence_english[i]%></p></div>
+          </div>
+          <% end %>
+          <h2>3. Complex sentences</h2>
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-md-9 bg-dark rounded"><strong>S + clause + V +  S + V + C.</strong></div>
+            <div class="col-1"></div>
+          </div>
+          <p>Betsaka ny karazana phrase complex amin'ny anglisy fa ny androany ny hojerentsika manokana ny clause momban'ny "relative clause". Izay arakan'ny firafitrany hitantsika tetsy ambony.</p>
+          <p>Ireo Lisitry ny relative clause azo ampiasaina amin'izany:</p>
+          <div class="row">
+            <div class="col"></div>
+            <div class="col">
+            <%@listsRelativeClause.each do |list|%>
+              <li class="list-group-item bg-dark">
+                <%= list %>
+              </li>
+            <%end%>
+            </div>
+            <div class="col"></div>
+          </div>
+          <% (@lessons_complex_sentence_english.length).times do |i|%>
+          <div class="row">
+            <div class="col"><p>Ohatra: <%= @lessons_complex_sentence_malagasy[i]%></p></div>
+            <div class="col"><p>Example: <%= @lessons_complex_sentence_english[i]%></p></div>
+          </div>
+          <% end %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-8 col-md-4 col-lg-3 m-sm-auto mr-md-auto ml-md-0">
+        <p><a href="/lessons/3">Lesson 3 <i class="fas fa-angle-right"></i></a></p>
+      </div>  
+    </div>
+  </div>
+</section>

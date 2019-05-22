@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get 'lessons/1', to: "lessons#one"
   get 'lessons/2', to: "lessons#two"
   get 'lessons/3', to: "lessons#three"
+  get 'lessons/4', to: "lessons#four"
 end
